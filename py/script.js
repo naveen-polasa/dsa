@@ -774,89 +774,89 @@
 // const ans = isPalindrome("A man, a plan, a canal: Panama");
 // console.log(ans)
 
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.left = null;
-    this.right = null;
-  }
-}
+// class Node {
+//   constructor(value) {
+//     this.value = value;
+//     this.left = null;
+//     this.right = null;
+//   }
+// }
 
-class Bst {
-  constructor() {
-    this.root = null;
-  }
-  isEmpty() {
-    return this.root === null;
-  }
-  insert(value) {
-    const node = new Node(value);
-    if (this.isEmpty()) {
-      this.root = node;
-    } else {
-      this.insertNode(this.root, node);
-    }
-  }
-  insertNode(root, node) {
-    if (node.value > root.value) {
-      if (root.right === null) {
-        root.right = node;
-      } else {
-        this.insertNode(root.right, node);
-      }
-    } else {
-      if (root.left === null) {
-        root.left = node;
-      } else {
-        this.insertNode(root.left, node);
-      }
-    }
-  }
-  search(root, value) {
-    if (!root) {
-      return false;
-    } else {
-      if (root.value === value) {
-        return true;
-      } else if (value < root.value) {
-        return this.search(root.left, value);
-      } else {
-        return this.search(root.right, value);
-      }
-    }
-  }
+// class Bst {
+//   constructor() {
+//     this.root = null;
+//   }
+//   isEmpty() {
+//     return this.root === null;
+//   }
+//   insert(value) {
+//     const node = new Node(value);
+//     if (this.isEmpty()) {
+//       this.root = node;
+//     } else {
+//       this.insertNode(this.root, node);
+//     }
+//   }
+//   insertNode(root, node) {
+//     if (node.value > root.value) {
+//       if (root.right === null) {
+//         root.right = node;
+//       } else {
+//         this.insertNode(root.right, node);
+//       }
+//     } else {
+//       if (root.left === null) {
+//         root.left = node;
+//       } else {
+//         this.insertNode(root.left, node);
+//       }
+//     }
+//   }
+//   search(root, value) {
+//     if (!root) {
+//       return false;
+//     } else {
+//       if (root.value === value) {
+//         return true;
+//       } else if (value < root.value) {
+//         return this.search(root.left, value);
+//       } else {
+//         return this.search(root.right, value);
+//       }
+//     }
+//   }
 
-  preOrder(root) {
-    if (root) {
-      console.log(root.value);
-      this.preOrder(root.left);
-      this.preOrder(root.right);
-    }
-  }
-  inOrder(root) {
-    if (root) {
-      this.inOrder(root.left);
-      console.log(root.value);
-      this.inOrder(root.right);
-    }
-  }
-  postOrder(root) {
-    if (root) {
-      this.postOrder(root.left);
-      this.postOrder(root.right);
-      console.log(root.value);
-    }
-  }
-}
+//   preOrder(root) {
+//     if (root) {
+//       console.log(root.value);
+//       this.preOrder(root.left);
+//       this.preOrder(root.right);
+//     }
+//   }
+//   inOrder(root) {
+//     if (root) {
+//       this.inOrder(root.left);
+//       console.log(root.value);
+//       this.inOrder(root.right);
+//     }
+//   }
+//   postOrder(root) {
+//     if (root) {
+//       this.postOrder(root.left);
+//       this.postOrder(root.right);
+//       console.log(root.value);
+//     }
+//   }
+// }
 
-const bs = new Bst();
-console.log(bs.isEmpty());
+// const bs = new Bst();
+// console.log(bs.isEmpty());
 
-bs.insert(10);
-bs.insert(5);
-bs.insert(15);
-console.log(bs);
-console.log(bs.search(bs.root, 15));
-bs.preOrder(bs.root);
-bs.inOrder(bs.root);
+// bs.insert(10);
+// bs.insert(5);
+// bs.insert(15);
+// console.log(bs);
+// console.log(bs.search(bs.root, 15));
+// bs.preOrder(bs.root);
+// bs.inOrder(bs.root);
 
