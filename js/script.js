@@ -859,3 +859,4 @@ console.log(bs);
 console.log(bs.search(bs.root, 15));
 bs.preOrder(bs.root);
 bs.inOrder(bs.root);
+
