@@ -343,32 +343,171 @@
 # l1.insertAtEnd(4)
 # l1.print()
 
-class Node:
-    def __init__(self, data = None, next = None):
-        self.data = data
-        self.next = next
+# class Node:
+#     def __init__(self, data = None, next = None):
+#         self.data = data
+#         self.next = next
 
-class Linkedlist:
-    def __init__(self):
-        self.head = None
+# class Linkedlist:
+#     def __init__(self):
+#         self.head = None
     
-    def insertAtBeginning(self,data):
-        node = Node(data, self.head)
-        self.head = node
+#     def insertAtBeginning(self,data):
+#         node = Node(data, self.head)
+#         self.head = node
 
-    def print(self):
-        if self.head is None:
-            print("ll is empty")
-            return
+#     def print(self):
+#         if self.head is None:
+#             print("ll is empty")
+#             return
         
-        itr = self.head
-        ll = ""
-        while itr:
-            ll+=str(itr.data) + '==>'
-            itr = itr.next
-        print(ll)
+#         itr = self.head
+#         ll = ""
+#         while itr:
+#             ll+=str(itr.data) + '==>'
+#             itr = itr.next
+#         print(ll)
 
-n1 = Linkedlist()
-n1.insertAtBeginning(48)
-n1.insertAtBeginning(48)
-n1.print()
+# n1 = Linkedlist()
+# n1.insertAtBeginning(48)
+# n1.insertAtBeginning(48)
+# n1.print()
+
+# a = 0
+# a = 23
+# print(a,'sfa')
+
+# a, b, c = 23, 23, True
+# print(a,b,c)
+
+# a+=1
+# a = a + 1
+# print(a)
+
+# a = None
+# print(a)
+
+# a = 1
+# if a < 0:
+#     print(a)
+# elif a == 1:
+#     print(a-1)
+# else:
+#     print(a)
+
+# n,m = 1,3
+# if(n<2 and m>2 or n == m):
+#     print(n,m)
+
+# n = 1
+# while n<5:
+#     print(n,end=' ')
+#     n+=1
+
+# print()
+
+# for i in range(5):
+#     print(i)
+
+# for i in range(2,6):
+#     print(i)
+
+# for i in range(5,1,-2):
+#     print(i)
+
+# print(5/2)
+# print(5//2)
+# print(-5//2)
+# print(int(-5/2))
+# print(-7//2)
+# print(20%6)
+# print(-20%6)
+
+# import math
+# print(math.fmod(-10,3))
+# print(math.floor(3/2))
+# print(math.ceil(3/2))
+# print(math.sqrt(2))
+# print(math.pow(3,2))
+
+# float('inf')
+# float('-inf')
+
+# arr = [1,32,42,31]
+# print(arr)
+
+# arr.append(4)
+# arr.append(4453)
+# print(arr)
+
+# arr.pop()
+# print(arr)
+# arr.insert(1,4)
+# print(arr)
+
+# arr[0] = 1
+# arr[3] = 421
+# print(arr)
+
+
+# arr = [1] * 5
+# print(arr)
+# print(len(arr))
+
+# print(arr[1:3])
+
+# a,b,c = [1,2,4]
+# print(a,b,c)
+
+# arr = [24,4,524,2,31]
+# for i in range(len(arr)):
+#     print(arr[i])
+
+# for i in arr:
+#     print(i)
+
+# for i, n in enumerate(arr):
+#     print(i,n)
+
+# arr1 = [12,42,24,52]
+# arr2 = [152,34,2,42,52]
+
+# for i, j in zip(arr1,arr2):
+#     print(i,j)
+
+# arr1.reverse()
+# print(arr1)
+# arr2.sort()
+# print(arr2)
+# arr2.sort(reverse=True)
+# print(arr2)
+
+# arr = [i+i for i in range(6)]
+# print(arr)
+
+# arr1 = [[0]*4 for i in range(5)]
+# print(arr1)
+
+# s = 'naveen'
+# print(s)
+
+# strs = ['av','sd','dsf']
+
+# print(' '.join(strs))
+
+# from collections import deque
+
+# queue = deque()
+# queue.append(21)
+# queue.append(2)
+# queue.pop()
+# print(queue)
+# queue.popleft()
+# queue.appendleft(2)
+# print(queue)
+
+# set = set()
+# set.add(23)
+# set.add(2323)
+# print(set)
+# print(len(set))
