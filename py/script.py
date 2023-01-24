@@ -511,3 +511,49 @@
 # set.add(2323)
 # print(set)
 # print(len(set))
+
+# nums = [-4,-1,0,3,10]
+
+# for i in range(len(nums)):
+#     nums[i] = nums[i]*nums[i]
+# nums.sort()
+# print(nums.sort())
+
+# class Solution:
+#     def isValid(self, s: str) -> bool:
+#         map = {
+#             ')':'(',
+#             ']':'[',
+#             '}':'{'
+#             }
+#         stack = []
+#         for i in s:
+#             if i in map and stack and map[i] == stack[-1]:
+#                 stack.pop()
+#             else:
+#                 stack.append(i)
+#         return not stack
+
+
+# s = Solution()
+# print(s.isValid(")]()"))
+
+
+# class Solution:
+#     def calPoints(self, operations) -> int:
+#         res = []
+#         for i in operations:
+#             if i == '+':
+#                 res.append(res[-2] + res[-1])
+#             elif i == 'D':
+#                 res.append(res[-1] * 2)
+#             elif i == 'C':
+#                 res.pop()
+#             else:
+#                 res.append(int(i))
+#         print(res)
+#         return res
+
+# s = Solution()
+# s.calPoints(["5","2","C","D","+"])
+
