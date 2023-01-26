@@ -557,3 +557,44 @@
 # s = Solution()
 # s.calPoints(["5","2","C","D","+"])
 
+# import collections
+
+# class Solution:
+#     def isValidSudoku(self, board) -> bool:
+#         cols = collections.defaultdict(set)
+#         rows = collections.defaultdict(set)
+#         squares = collections.defaultdict(set)  # key = (r /3, c /3)
+
+#         for r in range(9):
+#             for c in range(9):
+#                 if board[r][c] == ".":
+#                     continue
+#                 if (
+#                     board[r][c] in rows[r]
+#                     or board[r][c] in cols[c]
+#                     or board[r][c] in squares[(r // 3, c // 3)]
+#                 ):
+#                     return False
+#                 cols[c].add(board[r][c])
+#                 rows[r].add(board[r][c])
+#                 squares[(r // 3, c // 3)].add(board[r][c])
+#         return True
+
+
+# c = Solution()
+# c.isValidSudoku()
+
+
+# from collections import defaultdict
+
+# ans = defaultdict(set)
+# ans[23].add(234)
+# ans[23].add(432)
+# print(ans)
+# ans = set()
+# ans[1].add(32)
+# ans[1].add(342)
+# ans.add(424)
+# ans.add(44)
+# ans.add(44)
+# print(ans)
