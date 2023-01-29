@@ -598,3 +598,42 @@
 # ans.add(44)
 # ans.add(44)
 # print(ans)
+
+# def leastBricks( wall) -> int:
+#         gapMp = {0:0}
+
+#         for row in wall:
+#             total = 0
+#             for gap in row[:-1]:
+#                 total += gap
+#                 gapMp[total] = 1 + gapMp.get(total,0)
+#         print(gapMp)
+#         return len(wall) - max(gapMp.values())
+
+# a = leastBricks(wall = [[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]])
+# print(a)
+
+
+# nums = [12,23,53,654,7,344,2]
+
+# for i,a in enumerate(nums):
+#     print(i,a)
+
+# class Solution:
+#     def rotate(self, nums, k):
+#         l=0
+#         r = len(nums)-1
+#         self.swap(nums,l,r-k)
+#         self.swap(nums,r-k+1,r)
+#         self.swap(nums,l,r)
+
+#     def swap(self,nums,i,j):
+#         while i<j:
+#             [nums[i],nums[j]] = [nums[j],nums[i]]
+#             i+=1
+#             j-=1
+
+# l = Solution()
+# a = [1,2,3,4,5,6,7]
+# l.rotate(a, 3)
+# print(a)
